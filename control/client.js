@@ -1,4 +1,13 @@
-
+/**
+ * AJAX long-polling
+ *
+ * 1. sends a request to the server (without a timestamp parameter)
+ * 2. waits for an answer from server.php (which can take forever)
+ * 3. if server.php responds (whenever), put data_from_file into #response
+ * 4. and call the function again
+ *
+ * @param timestamp
+ */
 function TraerInstruccion(timestamp)
 {
     var queryString = {'timestamp' : timestamp};
