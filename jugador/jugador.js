@@ -12,7 +12,7 @@ function TraerInstruccion(fechayHora)
                 // transformo los datos de respuesta a JSON
                 var obj = jQuery.parseJSON(ParametrosRespuesta);
                 // muestro el enunciado
-                $('#Enunciado').html("<input type='text' id=enunciado value="+ obj.textoDeLaPregunta +" readonly>");
+                $('#Enunciado').html("<input type='text' id=enunciado value='"+ obj.textoDeLaPregunta +"' readonly>");
                 //llamo a la funcion con la fecha y hora que me devolvio el servidor
                 TraerInstruccion(obj.fechayHora);
             }
@@ -42,12 +42,7 @@ $(function() {
                         url: '../server/responder.php',
                         data: Parametros,
                         success: function(ParametrosRespuesta){
-                            // transformo los datos de respuesta a JSON
-                           // var obj = jQuery.parseJSON(ParametrosRespuesta);
-                            // muestro el enunciado
-                          //  $('#Enunciado').html("<input type='text' value="+ obj.textoDeLaPregunta +" readonly>");
-                            //llamo a la funcion con la fecha y hora que me devolvio el servidor
-                           // TraerInstruccion(obj.fechayHora);
+                          
                            alert(ParametrosRespuesta);
                         }
                     }
