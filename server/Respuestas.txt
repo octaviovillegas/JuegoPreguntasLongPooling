@@ -1,1 +1,5 @@
 que gusto tiene la sal -->Verdadero
+sos argentino -->Verdadero
+sos argentino -->Falso
+lallala -->Falso
+lallala -->Verdadero
